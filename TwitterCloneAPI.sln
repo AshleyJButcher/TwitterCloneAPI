@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterCloneAPI", "TwitterCloneAPI\TwitterCloneAPI.csproj", "{37A6798C-27C7-4BDC-B0FA-87B4560C5321}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterCloneAPI.Tests", "TwitterCloneAPI.Tests\TwitterCloneAPI.Tests.csproj", "{B84E9B2D-611C-4AB5-93C4-2D29F2ECDF89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37A6798C-27C7-4BDC-B0FA-87B4560C5321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A6798C-27C7-4BDC-B0FA-87B4560C5321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A6798C-27C7-4BDC-B0FA-87B4560C5321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A6798C-27C7-4BDC-B0FA-87B4560C5321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84E9B2D-611C-4AB5-93C4-2D29F2ECDF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84E9B2D-611C-4AB5-93C4-2D29F2ECDF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84E9B2D-611C-4AB5-93C4-2D29F2ECDF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84E9B2D-611C-4AB5-93C4-2D29F2ECDF89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A8BD364-88BE-416C-A324-BFB88BA3EAD3}
+	EndGlobalSection
+EndGlobal
