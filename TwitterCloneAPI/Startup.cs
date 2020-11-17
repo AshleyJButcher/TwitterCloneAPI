@@ -10,16 +10,20 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TwitterCloneAPI.DataSource;
+using TwitterCloneAPI.Interfaces;
 
 namespace TwitterCloneAPI
 {
     public class Startup
     {
         public const string AppS3BucketKey = "AppS3Bucket";
+        public static IDataSource thesource;
 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            thesource = new FixedSource();
         }
 
         public static IConfiguration Configuration { get; private set; }

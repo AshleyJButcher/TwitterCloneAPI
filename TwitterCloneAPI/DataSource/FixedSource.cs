@@ -46,7 +46,9 @@ namespace TwitterCloneAPI.DataSource
 
         public bool Add(clientNewTweet tweet)
         {
-            throw new NotImplementedException();
+            int TweetCount = Tweets.Count;
+            Tweets.Add(new serverTweet() { ID = TweetCount + 1, Text = tweet.Text, UserID = tweet.UserID });
+            return true;
         }
 
         public bool Delete(int TweetID)
@@ -91,7 +93,15 @@ namespace TwitterCloneAPI.DataSource
 
         public bool Update(clientTweet tweet)
         {
-            throw new NotImplementedException();
+            serverTweet TUM = Tweets.Where(t => t.ID == tweet.ID).FirstOrDefault();
+
+            if (TUM != null)
+            {
+                TUM.Text = tweet.Text;
+                return true;
+            }
+
+            return false;
         }
 
         public clientUser GetUser(int UserID)

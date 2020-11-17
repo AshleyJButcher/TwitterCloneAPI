@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwitterCloneAPI.Interfaces
 {
-    interface IDataSource
+    public interface IDataSource
     {
         bool Add(clientSignup signup);
         bool Add(clientNewTweet tweet);

@@ -14,10 +14,18 @@ namespace TwitterCloneAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public clientUser Post([FromBody]clientLoginModel value)
+        public IActionResult Post([FromBody]clientLoginModel value)
         {
             LoginCheck checkLogin = new LoginCheck();
-            return checkLogin.Check(value);
+            clientUser clientUserModel = checkLogin.Check(value);
+            if(clientUserModel != null)
+            {
+                return Ok(clientUserModel);
+            } else
+            {
+                return BadRequest("Invalid Username or Password");
+            }
+            
         }
 
     }

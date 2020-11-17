@@ -9,5 +9,7 @@ namespace TwitterCloneAPI.Models
     {
         public string Text { get; set; }
 
+        public int UserID { get; set; }
+
     }
 }
